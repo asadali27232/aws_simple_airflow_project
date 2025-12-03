@@ -60,6 +60,12 @@ Below are snapshots showing the working AWS services used in this project.
 
 ---
 
+## Architecture Diagram
+
+![Architecture Diagram](static/archetecture.jpg)
+
+---
+
 ## Dataset
 
 -   **Source**: [NYC Open Data - 311 Service Requests](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)
