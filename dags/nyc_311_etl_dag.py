@@ -10,7 +10,6 @@ sys.path.append(str(repo_root))
 
 # loading task modules
 from scripts.get_nyc311_data import get_nyc311_data
-from scripts.flatten_json import flatten_json_file
 from scripts.transformations import transformations
 from scripts.save_to_s3 import save_to_s3
 
