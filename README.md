@@ -1,4 +1,4 @@
-# Cloud-Based Data Pipeline with Apache Airflow on AWS EC2
+# Simple Cloud-Based Data Pipeline with Apache Airflow on AWS EC2
 
 ---
 
