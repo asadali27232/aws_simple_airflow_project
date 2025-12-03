@@ -4,8 +4,8 @@ from flatten_json import flatten_json
 
 
 def transformations(
-            input_file="./data/nyc_311_flattened.json",
-            output_file="./data/nyc_311_cleaned.csv"
+            input_file="s3://nyc311-airflow-data-bucket/raw/nyc_311_flattened.json",
+            output_file="s3://nyc311-airflow-data-bucket/cleaned/nyc_311_cleaned.csv"
         ):
     # Load JSON into memory
     with open(input_file, "r", encoding="utf-8") as f:

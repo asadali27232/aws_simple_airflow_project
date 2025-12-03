@@ -48,8 +48,8 @@ upload_to_s3 = PythonOperator(
     python_callable=save_to_s3,
     dag=dag_nyc311,
     op_kwargs={
-        "bucket_name": "my-data-bucket",
-        "s3_key": "first_1m_rows/nyc_311_cleaned.csv"
+        "bucket_name": "nyc311-airflow-data-bucket",
+        "s3_key": "/cleaned/nyc_311_cleaned_first_1m."
     },
 )
 

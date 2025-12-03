@@ -3,8 +3,8 @@ import json
 from pathlib import Path
 
 def flatten_json_file(
-        input_file="./data/nyc_311_first_1m.json",
-        output_file="./data/nyc_311_flattened.json"
+        input_file="s3://nyc311-airflow-data-bucket/raw/nyc_311_first_1m.json",
+        output_file="s3://nyc311-airflow-data-bucket/raw/nyc_311_flattened.json"
     ):
     """
     Reads a JSON file, flattens any nested dict columns, 

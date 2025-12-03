@@ -4,3 +4,4 @@ requests
 python-dotenv
 pyarrow
 s3fs
+apache-airflow=2.9.1
