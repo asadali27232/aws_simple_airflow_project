@@ -3,7 +3,10 @@ import pandas as pd
 from flatten_json import flatten_json
 
 
-def transformations(input_file, output_file):
+def transformations(
+            input_file="./data/nyc_311_flattened.json",
+            output_file="./data/nyc_311_cleaned.csv"
+        ):
     # Load JSON into memory
     with open(input_file, "r", encoding="utf-8") as f:
         raw_data = json.load(f)
@@ -41,7 +44,6 @@ def transformations(input_file, output_file):
         "agency": "Unknown",
         "complaint_type": "Not Specified",
         "descriptor": "Not Specified",
-        "borough": "Unknown",
     }
     for col, default_val in fill_defaults.items():
         if col in df.columns:
@@ -58,7 +60,6 @@ def transformations(input_file, output_file):
         "descriptor",
         "incident_zip",
         "incident_address",
-        "borough",
         "latitude",
         "longitude",
         "resolution_description"

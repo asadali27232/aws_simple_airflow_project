@@ -1,7 +1,7 @@
 import boto3
 import pandas as pd
 
-def upload_df_to_s3(bucket_name, s3_key, local_file="nyc_311_first_1m.csv"):
+def save_to_s3(bucket_name, s3_key, local_file="./data/nyc_311_first_1m.csv"):
     data = pd.read_csv(local_file)
 
     # 2. Create S3 client

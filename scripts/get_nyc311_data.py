@@ -3,7 +3,7 @@ import json
 
 def get_nyc311_data(
         api_url="https://data.cityofnewyork.us/resource/erm2-nwe9.json?$limit=1000000",
-        output_file="nyc_311_first_1m.json"
+        output_file="./data/nyc_311_first_1m.json"
         ):
     try:
         response = requests.get(api_url, stream=True)
