@@ -1,6 +1,12 @@
+import sys
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
+from pathlib import Path
+
+# Add project root to sys.path
+repo_root = Path(__file__).resolve().parents[1]
+sys.path.append(str(repo_root))
 
 # loading task modules
 from scripts.get_nyc311_data import get_nyc311_data
