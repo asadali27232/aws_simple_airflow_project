@@ -43,7 +43,7 @@ The project focuses on setting up a standalone Airflow server on the cloud, mana
 
 ## Architecture Diagram
 
-![Architecture Diagram](static/archetecture.jpg)
+![Architecture Diagram](static/architecture.jpg)
 
 ---
 
