@@ -28,4 +28,3 @@ def save_to_s3(bucket_name, s3_key, input_csv="s3://nyc311-airflow-data-bucket/c
     s3.put_object(Bucket=bucket_name, Key=s3_key, Body=buffer.getvalue())
 
     print(f"Uploaded Parquet to s3://{bucket_name}/{s3_key}")
-s
