@@ -47,6 +47,10 @@ upload_to_s3 = PythonOperator(
     task_id='upload_nyc311_data_to_s3',
     python_callable=save_to_s3,
     dag=dag_nyc311,
+    op_kwargs={
+        "bucket_name": "my-data-bucket",
+        "s3_key": "first_1m_rows/nyc_311_cleaned.csv"
+    },
 )
 
 fetch_data >> flatten_data >> transform_data >> upload_to_s3

@@ -6,6 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
+nyc311_airflow_key.pem
 # Distribution / packaging
 .Python
 build/
