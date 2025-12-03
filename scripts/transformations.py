@@ -1,6 +1,6 @@
 import json
 import pandas as pd
-from flatten_json import flatten_json
+from .flatten_json import flatten_json
 
 
 def transformations(
