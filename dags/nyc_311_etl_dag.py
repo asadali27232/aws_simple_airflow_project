@@ -36,12 +36,6 @@ fetch_data = PythonOperator(
     dag=dag_nyc311,
 )
 
-flatten_data = PythonOperator(
-    task_id='flatten_nyc311_data',
-    python_callable=flatten_json_file,
-    dag=dag_nyc311,
-)
-
 transform_data = PythonOperator(
     task_id='transform_nyc311_data',
     python_callable=transformations,
@@ -58,5 +52,5 @@ upload_to_s3 = PythonOperator(
     },
 )
 
-fetch_data >> flatten_data >> transform_data >> upload_to_s3
+fetch_data >> transform_data >> upload_to_s3
 
