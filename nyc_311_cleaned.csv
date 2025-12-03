@@ -1,0 +1,11 @@
+unique_key,status,created_date,closed_date,agency,complaint_type,descriptor,incident_zip,incident_address,borough,latitude,longitude,resolution_description
+67011088,Open,2025-12-02 02:57:06,,DOT,Street Condition,Pothole,11418,JAMAICA AVENUE,QUEENS,,,The Department of Transportation referred this complaint to the appropriate Maintenance Unit for repair.
+67019305,Open,2025-12-02 02:56:09,,DOT,Street Condition,Pothole,11435,JAMAICA AVENUE,QUEENS,,,The Department of Transportation referred this complaint to the appropriate Maintenance Unit for repair.
+67012719,Open,2025-12-02 02:55:08,,DOT,Street Condition,Pothole,11419,,QUEENS,40.69189445644912,-73.81916189611988,The Department of Transportation referred this complaint to the appropriate Maintenance Unit for repair.
+67010233,Closed,2025-12-02 02:53:59,2025-12-02 02:54:00,DOT,Street Condition,Pothole,11435,,QUEENS,40.69840911180365,-73.8064642136823,The Department of Transportation determined that this complaint is a duplicate of a previously filed complaint. The original complaint is being addressed.
+67017683,Open,2025-12-02 02:50:55,,DOT,Street Condition,Pothole,11435,,QUEENS,40.69840911180365,-73.8064642136823,The Department of Transportation referred this complaint to the appropriate Maintenance Unit for repair.
+67011089,Open,2025-12-02 02:49:36,,DOT,Street Condition,Pothole,11436,,QUEENS,40.66790800911412,-73.79473281844355,The Department of Transportation referred this complaint to the appropriate Maintenance Unit for repair.
+67007831,Open,2025-12-02 02:47:21,,DOT,Street Condition,Pothole,11436,,QUEENS,40.66697134484961,-73.79129683982016,The Department of Transportation referred this complaint to the appropriate Maintenance Unit for repair.
+67009620,In Progress,2025-12-02 02:06:19,,NYPD,Illegal Parking,Blocked Hydrant,11204,1869 70 STREET,BROOKLYN,40.61547330696239,-73.99175888647898,
+67017926,In Progress,2025-12-02 02:06:09,,NYPD,Noise - Residential,Loud Music/Party,10466,661 EAST  230 STREET,BRONX,40.891820074686,-73.860009421079,
+67011174,In Progress,2025-12-02 02:05:27,,NYPD,Abandoned Vehicle,With License Plate,10306,260 HUNTER AVENUE,STATEN ISLAND,40.57960750421204,-74.10025145881102,
