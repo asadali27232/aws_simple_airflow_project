@@ -1,10 +1,10 @@
-# AWS Simple Airflow Project: NYC 311 ETL Pipeline
+# Cloud-Based Data Pipeline with Apache Airflow on AWS EC2
 
 ---
 
 ## Overview
 
-This project demonstrates a robust Data Engineering pipeline using **Apache Airflow** hosted on an **AWS EC2 (Ubuntu)** instance. The system automates the extraction, transformation, and loading (ETL) of NYC 311 Service Request data, culminating in optimized storage on **Amazon S3**.
+This project demonstrates a simple Data Engineering pipeline using **Apache Airflow** hosted on an **AWS EC2 (Ubuntu)** instance. The system automates the extraction, transformation, and loading (ETL) of NYC 311 Service Request data, culminating in optimized storage on **Amazon S3**.
 
 The project focuses on setting up a standalone Airflow server on the cloud, managing dependencies, and orchestrating a Python-based data workflow.
 
