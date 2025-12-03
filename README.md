@@ -41,25 +41,6 @@ The project focuses on setting up a standalone Airflow server on the cloud, mana
 
 ---
 
-## Services in Action
-
-Below are snapshots showing the working AWS services used in this project.
-
-<table>
-  <tr>
-    <td><img src="static/image1.png" alt="AWS Screenshot 1" width="300"/></td>
-    <td><img src="static/image2.png" alt="AWS Screenshot 2" width="300"/></td>
-    <td><img src="static/image3.png" alt="AWS Screenshot 3" width="300"/></td>
-  </tr>
-  <tr>
-    <td><img src="static/image4.png" alt="AWS Screenshot 4" width="300"/></td>
-    <td><img src="static/image5.png" alt="AWS Screenshot 5" width="300"/></td>
-    <td><img src="static/image6.png" alt="AWS Screenshot 6" width="300"/></td>
-  </tr>
-</table>
-
----
-
 ## Architecture Diagram
 
 ![Architecture Diagram](static/archetecture.jpg)
@@ -172,6 +153,25 @@ Access the UI at `http://<EC2-Public-IP>:8080`.
 2.  In the Airflow UI, unpause the **`nyc_311_data_pipeline`** DAG.
 3.  Trigger the DAG manually or wait for the scheduled run.
 4.  Monitor the steps in the **Graph View**.
+
+---
+
+## Services in Action
+
+Below are snapshots showing the working AWS services used in this project.
+
+<table>
+  <tr>
+    <td><img src="static/image1.png" alt="AWS Screenshot 1" width="300"/></td>
+    <td><img src="static/image2.png" alt="AWS Screenshot 2" width="300"/></td>
+    <td><img src="static/image3.png" alt="AWS Screenshot 3" width="300"/></td>
+  </tr>
+  <tr>
+    <td><img src="static/image4.png" alt="AWS Screenshot 4" width="300"/></td>
+    <td><img src="static/image5.png" alt="AWS Screenshot 5" width="300"/></td>
+    <td><img src="static/image6.png" alt="AWS Screenshot 6" width="300"/></td>
+  </tr>
+</table>
 
 ---
 
