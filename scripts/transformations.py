@@ -1,34 +1,9 @@
 import json
 import pandas as pd
+from flatten_json import flatten_json
 
 
-import pandas as pd
-
-def flatten_nested_columns(df):
-    """
-    Detects columns that contain dict/json objects,
-    flattens them, and merges them back into the DataFrame.
-    """
-    cols_to_flatten = []
-
-    # Find columns that contain dicts
-    for col in df.columns:
-        if df[col].apply(lambda x: isinstance(x, dict)).any():
-            cols_to_flatten.append(col)
-
-    # Flatten each dict column
-    for col in cols_to_flatten:
-        # Normalize the nested dict column
-        flattened = pd.json_normalize(df[col])
-        flattened.columns = [f"{col}_{sub}" for sub in flattened.columns]
-
-        # Drop original nested column and join flattened data
-        df = df.drop(columns=[col]).join(flattened)
-
-    return df
-
-
-def clean_nyc311_to_csv(input_file, output_file):
+def transformations(input_file, output_file):
     # Load JSON into memory
     with open(input_file, "r", encoding="utf-8") as f:
         raw_data = json.load(f)
@@ -37,7 +12,7 @@ def clean_nyc311_to_csv(input_file, output_file):
     df = pd.DataFrame(raw_data)
 
     # flattern nested columns
-    df = flatten_nested_columns(df)
+    df = flatten_json(df)
 
     # ---- 1. Standardize Column Names ----
     df.columns = (
@@ -97,5 +72,6 @@ def clean_nyc311_to_csv(input_file, output_file):
     print(f"Clean CSV saved as: {output_file}")
 
 
-# Run it
-clean_nyc311_to_csv("nyc_311_first_1m.json", "nyc_311_cleaned.csv")
+if __name__ == "__main__":
+    # Run it
+    transformations("nyc_311_first_1m.json", "nyc_311_cleaned.csv")
